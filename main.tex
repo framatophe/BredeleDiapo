@@ -1,9 +1,6 @@
-\documentclass[compress,8pt]{beamer}
-\usetheme{bredele}
-%\documentclass[handout,8pt]{beamer} % pour passer
-%\usepackage{pgfpages} % En A4, il faut
-%\pgfpagesuselayout{resize to}[a4paper,border shrink=5mm,landscape] %Ajouter ces trois lignes
-%\usepackage{beamerthemeshadow}
+
+\documentclass{bredelebeamer}
+
 
 
 
@@ -57,11 +54,70 @@
 
 \begin{frame}{Sommaire}
   \tableofcontents
-  % You might wish to add the option [pausesections]
+  % possibilité d'ajouter l'option [pausesections]
 \end{frame}
 
-% Section and subsections will appear in the presentation overview
-% and table of contents.
+
+
+
+\section{Aperçu global}
+
+\begin{frame}{Aperçu global}
+Texte normal \alert{Texte Alert}  \exemple{Texte exemple} \emph{Texte emphase}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+\begin{block}{Bloc simple}
+\begin{itemize}
+\item Premier point
+\end{itemize}
+\end{block}
+
+\begin{exampleblock}{Bloc exemple}
+\begin{itemize}
+\item Premier point
+\end{itemize}
+\end{exampleblock}
+
+\begin{alertblock}{Bloc alert}
+\begin{itemize}
+\item Premier point
+\end{itemize}
+\end{alertblock}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\boiteviolette{
+Une boite violette
+}
+
+\boiteorange{
+Une boite orange
+}
+
+\boitegrise{
+Une boite grise
+}
+
+
+
+\begin{tcolorbox}[tabvert,tabularx={X||Y|Y|Y|Y||Y}, boxrule=0.5pt, title=Mon tableau des prix]
+Couleur & Prix 1  & Prix 2  & Prix 3 \\\hline\hline
+Rouge   & 10.00   & 20.00   &  30.00 \\\hline
+Vert    & 20.00   & 30.00   &  40.00  \\\hline
+Bleu    & 30.00   & 40.00   &  50.00 \\\hline\hline
+Orange  & 60.00   & 90.00   & 120.00 
+\end{tcolorbox}
+
+\end{column}
+
+\end{columns}
+\end{frame}
+
+
+
 
 \section{Les blocs}
 
@@ -190,6 +246,54 @@ Voici du texte normal
 \end{frame}
 
 
+\section{Les tableaux}
+
+\begin{frame}{Tableaux}
+
+% merci: http://tex.stackexchange.com/questions/112343/beautiful-table-samples
+
+\begin{tcolorbox}[tabjaune,tabularx={X||Y|Y|Y|Y||Y}, boxrule=0.5pt]
+Couleur & Prix 1  & Prix 2  & Prix 3   & Prix 4   & Prix 5 \\\hline\hline
+Rouge   & 10.00   & 20.00   &  30.00   &  40.00   & 100.00 \\\hline
+Vert    & 20.00   & 30.00   &  40.00   &  50.00   & 140.00 \\\hline
+Bleu    & 30.00   & 40.00   &  50.00   &  60.00   & 180.00 \\\hline\hline
+Orange  & 60.00   & 90.00   & 120.00   & 150.00   & 420.00
+\end{tcolorbox}
+
+\begin{tcolorbox}[tabvert,tabularx={X||Y|Y|Y|Y||Y}, boxrule=0.5pt, title=Mon tableau des prix]
+Couleur & Prix 1  & Prix 2  & Prix 3   & Prix 4   & Prix 5 \\\hline\hline
+Rouge   & 10.00   & 20.00   &  30.00   &  40.00   & 100.00 \\\hline
+Vert    & 20.00   & 30.00   &  40.00   &  50.00   & 140.00 \\\hline
+Bleu    & 30.00   & 40.00   &  50.00   &  60.00   & 180.00 \\\hline\hline
+Orange  & 60.00   & 90.00   & 120.00   & 150.00   & 420.00
+\end{tcolorbox}
+
+\end{frame}
+
+
+\begin{frame}{Tableaux}
+
+% merci: http://tex.stackexchange.com/questions/112343/beautiful-table-samples
+
+\begin{tcolorbox}[tabgris,tabularx={X||Y|Y|Y|Y||Y}, boxrule=0.5pt]
+Couleur & Prix 1  & Prix 2  & Prix 3   & Prix 4   & Prix 5 \\\hline\hline
+Rouge   & 10.00   & 20.00   &  30.00   &  40.00   & 100.00 \\\hline
+Vert    & 20.00   & 30.00   &  40.00   &  50.00   & 140.00 \\\hline
+Bleu    & 30.00   & 40.00   &  50.00   &  60.00   & 180.00 \\\hline\hline
+Orange  & 60.00   & 90.00   & 120.00   & 150.00   & 420.00
+\end{tcolorbox}
+
+\begin{tcolorbox}[taborange,tabularx={X||Y|Y|Y|Y||Y}, boxrule=0.5pt, title=Mon tableau des prix]
+Couleur & Prix 1  & Prix 2  & Prix 3   & Prix 4   & Prix 5 \\\hline\hline
+Rouge   & 10.00   & 20.00   &  30.00   &  40.00   & 100.00 \\\hline
+Vert    & 20.00   & 30.00   &  40.00   &  50.00   & 140.00 \\\hline
+Bleu    & 30.00   & 40.00   &  50.00   &  60.00   & 180.00 \\\hline\hline
+Orange  & 60.00   & 90.00   & 120.00   & 150.00   & 420.00
+\end{tcolorbox}
+
+\end{frame}
+
+
 
 \section{Les images}
 
@@ -197,8 +301,8 @@ Voici du texte normal
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.3]{images/chaton.png}
-\caption{Ceci est un poisson}
+\includegraphics[scale=0.5]{images/architecturebretonne_wikipedia.jpg}
+\caption{Éléments d'architecture bretonne typique du Sud de la France. \\ (\href{http://commons.wikimedia.org/wiki/File:Colmar_-_Alsace.jpg}{Wikipédia.fr} CC-By-Sa)}
 \end{figure}
 
 \end{frame}
@@ -206,5 +310,4 @@ Voici du texte normal
 
 
 \end{document}
-
 
