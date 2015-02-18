@@ -1,6 +1,7 @@
 %%%%%% Licence%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % la classe LaTeX Bredelebeamer est placée sous licence GNU-GPL v3
 % copyright 2015 Christophe Masutti
+% https://github.com/framatophe/
 % Il s'agit d'un style simple aux couleurs de Framasoft (http://framasoft.org)
 % agrémenté de quelques boites.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
