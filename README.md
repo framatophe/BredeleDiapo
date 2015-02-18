@@ -6,4 +6,5 @@ Il s'agit d'un style simple aux couleurs de Framasoft (http://framasoft.org), ag
 
 L'ensemble est adaptable selon les besoins de l'utilisateur.
 
-!(Bredele sample)[BredeleDiapo_sample.png]
+
+<img src="BredeleDiapo_sample.png">
